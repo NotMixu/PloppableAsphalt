@@ -21,6 +21,8 @@ namespace PloppableAsphalt
         {
             base.OnLevelLoaded(mode);
 
+            Debug.Log("something");
+
             if (UserMod.IsEnabled && IsApplicable(mode))
             {
                 Debug.Log($"[AdditiveShader] Initialising for LoadMode: {mode}");
