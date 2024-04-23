@@ -74,6 +74,8 @@ namespace PloppableAsphalt.SettingsUI
         [SuppressMessage("StyleCop.CSharp.SpacingRules", "SA1009:Closing parenthesis should be spaced correctly")]
         public RGBSliders(UIHelperBase helper, Action<Color> colorChangeHandler)
         {
+            Debug.Log("test");
+            
             if (helper == null)
                 throw new ArgumentNullException(nameof(helper), "A UIHelperBase must be provided.");
 
