@@ -24,7 +24,5 @@ namespace PloppableAsphalt.SettingsUI
         /// The blue slider.
         /// </summary>
         Blue = 1 << 2,
-
-        Yellow = 1 << 3,
     }
 }
