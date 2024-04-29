@@ -51,6 +51,8 @@ namespace PloppableAsphalt.Manager
         /// <param name="meshName">The <c>m_mesh.name</c> from the prop or decal.</param>
         public PloppableAsset(PropInfo propInfo, string meshName)
         {
+            Debug.Log("hmm");
+            
             if (propInfo is null)
                 throw new ArgumentNullException(nameof(propInfo), "propInfo must not be null.");
 
