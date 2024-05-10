@@ -39,6 +39,7 @@ namespace PloppableAsphalt
         /// <param name="newColor">The new color selected by the user.</param>
         public static void SetAsphaltColor(Color newColor)
         {
+            Debug.Log(newColor);
             PloppableAsphaltManager.SetAsphaltColor(newColor);
             // todo: persist
         }

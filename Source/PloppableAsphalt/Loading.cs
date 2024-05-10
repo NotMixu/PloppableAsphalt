@@ -21,7 +21,7 @@ namespace PloppableAsphalt
         {
             base.OnLevelLoaded(mode);
 
-            Debug.Log("hmm");
+            Debug.Log("something");
 
             if (UserMod.IsEnabled && IsApplicable(mode))
             {

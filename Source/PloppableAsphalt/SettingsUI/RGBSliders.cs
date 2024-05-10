@@ -74,6 +74,8 @@ namespace PloppableAsphalt.SettingsUI
         [SuppressMessage("StyleCop.CSharp.SpacingRules", "SA1009:Closing parenthesis should be spaced correctly")]
         public RGBSliders(UIHelperBase helper, Action<Color> colorChangeHandler)
         {
+            Debug.Log("test");
+            
             if (helper == null)
                 throw new ArgumentNullException(nameof(helper), "A UIHelperBase must be provided.");
 
@@ -163,6 +165,8 @@ namespace PloppableAsphalt.SettingsUI
         [SuppressMessage("Maintainability", "AV1500:Member or local function contains too many statements")]
         private UITextField AddSliderText(UIHelperBase helper, SliderID sliderId)
         {
+            Debug.Log("test");
+            
             var textfield = (UITextField)helper.AddTextfield(BLANK, "0", (string stringValue) =>
             {
                 if (sliderEventLock || string.IsNullOrEmpty(stringValue))

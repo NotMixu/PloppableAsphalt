@@ -63,6 +63,7 @@ namespace PloppableAsphalt.Manager
                     Debug.LogError($"[PloppableAsphalt] PropInfo error: {prop.name}\n{error}");
                 }
 
+            Debug.Log(scanned);
             Debug.Log($"[PloppableAsphalt] PropInfo - Expected: {PrefabCollection<PropInfo>.LoadedCount()}, Scanned: {scanned}");
         }
 
